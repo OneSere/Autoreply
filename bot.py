@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
-BOT_TOKEN = os.getenv("7615733863:AAEqOfOP4f3eAX70yLDR0pQp30nAzJ3y2no")  # Get bot token from Railway environment variables
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Get bot token from Railway environment variables
 
 def auto_reply(update: Update, context: CallbackContext):
     """Replies only in direct messages (DMs) when the admin is offline."""
